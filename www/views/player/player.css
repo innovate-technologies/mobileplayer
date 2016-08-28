@@ -1,0 +1,79 @@
+.player {
+    background-color: #111;
+}
+.logo {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.logo>img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.nowplaying-cover {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.nowplaying-cover>img {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.playing-section {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
+
+.nowplaying-bar {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+}
+
+.nowplaying-bar>.nowplaying {
+    font-size: 1.6em;
+    display: block;
+    margin: auto 10px;   
+}
+.nowplaying-bar>.play-pause{
+    position: absolute;
+    right: 10px;
+    padding-top: 6px;
+}
+.nowplaying-bar>.play-pause>i{
+    color: #fff;
+    background-color: inherit;
+}
+
+.lastplayed {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.lastplayed .col {
+    margin: 0;
+    padding: 0 2px;
+}
+
+.lastplayed .col:first-child {
+    padding-left: 0;
+}
+
+.lastplayed .col:last-child {
+    padding-right: 0;
+}
+
+.lastplayed img {
+    width: 70px;
+}
+
+.button-top-bar {
+    width: 40px;
+}

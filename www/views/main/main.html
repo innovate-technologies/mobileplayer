@@ -1,0 +1,22 @@
+<ion-nav-bar class="bar-stable">
+  <ion-nav-back-button></ion-nav-back-button>
+  <ion-nav-buttons side="left">
+    <button class="button button-clear button-top-bar" ng-click="doSomething()">
+        <i ng-show="isiOS" class="icon ion-ios-upload-outline"></i>  
+        <i ng-hide="isiOS" class="icon ion-android-share-alt"></i>      
+      </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-clear button-top-bar" ng-click="doSomething()">
+        <i class="icon ion-social-facebook"></i>      
+      </button>
+    <button class="button button-clear button-top-bar" ng-click="doSomething()">
+       <i class="icon ion-social-twitter"></i>
+       </button>
+    <button class="button button-clear button-top-bar" ng-click="doSomething()">
+      <i class="icon ion-android-globe"></i>
+      </button>
+  </ion-nav-buttons>
+</ion-nav-bar>
+<ion-nav-view name="menuContent">
+</ion-nav-view>
