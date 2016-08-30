@@ -1,19 +1,19 @@
 <ion-view view-title="">
-  <ion-content scroll="false" class="player">
-      <div class="logo"><img src="https://photon.shoutca.st/swift.innovatete.ch/v1/AUTH_c7c69319e10b45c9b13b144831accc93/images/cfa5aa80-7f22-40f7-8884-057a264b2710.png"
-        /></div>
-      <div class="nowplaying-cover"><img src="http://photon.shoutca.st/cdn.shoutca.st/noalbum.png" /></div>
+  <ion-content scroll="false" class="player" ng-style="{'background-color': config.backgroundColour}">
+      <div class="logo"><img ng-src="{{config.logo}}"/></div>
+      <div class="nowplaying-cover"><img ng-src="{{songs[0].cover}}" /></div>
       <div class="playing-section">
-        <div class="button-bar nowplaying-bar">
-          <div class="nowplaying">Artist - Song</div>
-          <button class="button button-clear play-pause"><i class="icon ion-play"></i></button>
+        <div class="button-bar nowplaying-bar" ng-style="{'background-color': shadedBackgroundColour}">
+          <div class="nowplaying" ng-if="songs[0]">{{songs[0].artist}} - {{songs[0].song}}</div>
+          <button class="button button-clear play-pause" ng-click="play()" ng-hide="isPlaying"><i class="icon ion-play"></i></button>
+          <button class="button button-clear play-pause" ng-click="stop()" ng-show="isPlaying"><i class="icon ion-stop"></i></button>
         </div>
 
         <div class="row lastplayed">
-          <div class="col"><img src="http://photon.shoutca.st/cdn.shoutca.st/noalbum.png?w=200" /></div>
-          <div class="col"><img src="http://photon.shoutca.st/cdn.shoutca.st/noalbum.png?w=200" /></div>
-          <div class="col"><img src="http://photon.shoutca.st/cdn.shoutca.st/noalbum.png?w=200" /></div>
-          <div class="col"><img src="http://photon.shoutca.st/cdn.shoutca.st/noalbum.png?w=200" /></div>
+          <div class="col"><img ng-src="{{songs[1].cover}}?w=150" /></div>
+          <div class="col"><img ng-src="{{songs[2].cover}}?w=150" /></div>
+          <div class="col"><img ng-src="{{songs[3].cover}}?w=150" /></div>
+          <div class="col"><img ng-src="{{songs[4].cover}}?w=150" /></div>
         </div>
       </div>
     </ion-content>

@@ -17,10 +17,21 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
 
-    <!-- your app's js -->
+    <!--Socket.io-->
+    <script src="https://np-rt.innovatete.ch/socket.io/socket.io.js"></script>
+    <script src="lib/angular-socket-io/socket.js"></script>
+
+    <!-- app.js -->
     <script src="app.js"></script>
-    <script src="js/controllers.js"></script>
+
+    <!--independent services-->
+    <script src="services/config.service.js"></script>
+    <script src="services/colors.service.js"></script>
+
+    <!--socket angular-->
+    <script src="services/socket.factory.js"></script>
 
     <!--main-->
     <script src="views/main/main.css"></script>
@@ -32,7 +43,7 @@
 
   </head>
 
-  <body ng-app="starter">
+  <body ng-app="player">
     <ion-nav-view></ion-nav-view>
   </body>
 </html>
