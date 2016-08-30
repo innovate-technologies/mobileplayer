@@ -3,5 +3,6 @@
 
 node_modules/
 platforms/
-plugins/
+plugins/cordova*
+plugins/ionic*
 .DS_store
