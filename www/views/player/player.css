@@ -3,7 +3,9 @@
 }
 .logo {
     margin-top: 20px;
-    height: 100px;
+    height: 90px;
+    position: relative;
+    top: 60px;
 }
 
 .logo>img {
@@ -14,13 +16,13 @@
 
 .nowplaying-cover {
     position: absolute;
-    top: 20%;
+    top: 30%;
     width: 100%;
 }
 
 .nowplaying-cover>img {
     display: block;
-    max-width: 300px;
+    max-width: 240px;
     margin: 0 auto;
 }
 
@@ -40,7 +42,9 @@
 .nowplaying-bar>.nowplaying {
     font-size: 1.6em;
     display: block;
-    margin: auto 10px;   
+    margin: auto 10px;
+    margin-right: 60px;
+    white-space: nowrap;   
 }
 .nowplaying-bar>.play-pause{
     position: absolute;

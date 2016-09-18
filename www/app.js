@@ -4,7 +4,7 @@
 // "starter" is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of "requires"
 // "starter.controllers" is found in controllers.js
-angular.module("player", ["ionic", "player.controllers", "player.services", "btford.socket-io", "ngCordova"])
+angular.module("player", ["ionic", "player.controllers", "player.services", "player.directives", "btford.socket-io", "ngCordova", "720kb.tooltips"])
 
   .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -48,3 +48,4 @@ angular.module("player", ["ionic", "player.controllers", "player.services", "btf
 
 angular.module("player.controllers", [])
 angular.module("player.services", [])
+angular.module("player.directives", [])

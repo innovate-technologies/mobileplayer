@@ -1,3 +1,8 @@
+<style>
+  .platform-ios .popover-arrow:after {
+    background: {{popupBackgroundColour}};
+  }
+</style>
 <ion-view view-title="">
   <ion-content scroll="false" class="player" ng-style="{'background-color': config.backgroundColour}">
       <div class="logo"><img ng-src="{{config.logo}}"/></div>
@@ -10,10 +15,7 @@
         </div>
 
         <div class="row lastplayed">
-          <div class="col"><img ng-src="{{songs[1].cover}}?w=150" /></div>
-          <div class="col"><img ng-src="{{songs[2].cover}}?w=150" /></div>
-          <div class="col"><img ng-src="{{songs[3].cover}}?w=150" /></div>
-          <div class="col"><img ng-src="{{songs[4].cover}}?w=150" /></div>
+          <div class="col" ng-repeat="i in [1,2,3,4]"><img ng-src="{{songs[i].cover}}?w=150" ng-click="openPopover($event, songs[i])" /></div>
         </div>
       </div>
     </ion-content>

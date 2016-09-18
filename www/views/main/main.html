@@ -8,15 +8,15 @@
 <ion-nav-bar class="bar-positive">
   <ion-nav-back-button></ion-nav-back-button>
   <ion-nav-buttons side="left">
-    <button class="button button-clear button-top-bar" ng-click="doSomething()">
+    <button class="button button-clear button-top-bar" ng-click="share()" ng-show="config.sharing.enabled">
         <i ng-show="isiOS" class="icon ion-ios-upload-outline" ng-style="{color: config.tint}"></i>  
         <i ng-hide="isiOS" class="icon ion-android-share-alt" ng-style="{color: config.tint}"></i>      
       </button>
   </ion-nav-buttons>
   <ion-nav-buttons side="right">
     <span ng-repeat="button in config.buttons">
-      <button class="button button-clear button-top-bar" ng-click="doSomething()">
-        <i class="icon ion-social-facebook" ng-style="{color: config.tint}"></i>      
+      <button class="button button-clear button-top-bar" ng-click="pressedButton(button)">
+        <i class="icon" ng-class="button.icon" ng-style="{color: config.tint}"></i>      
       </button>
     </span>
   </ion-nav-buttons>
