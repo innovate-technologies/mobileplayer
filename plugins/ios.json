@@ -7,13 +7,13 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         },
-        "cordova-plugin-media": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         },
         "cordova-plugin-splashscreen": {
@@ -22,19 +22,16 @@
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         },
-        "cordova-plugin-whitelist": {
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         },
-        "ionic-plugin-keyboard": {
+        "cordova-plugin-media": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         },
         "cordova-plugin-nowplaying": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         },
         "cordova-plugin-remotecommand": {
-            "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
-        },
-        "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         }
     },
