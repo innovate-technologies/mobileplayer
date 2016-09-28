@@ -33,6 +33,9 @@
         },
         "cordova-plugin-remotecommand": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         }
     },
     "dependent_plugins": {
