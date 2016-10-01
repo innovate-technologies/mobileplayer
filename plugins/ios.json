@@ -36,6 +36,12 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
+        },
+        "cordova-plugin-safariviewcontroller": {
+            "PACKAGE_NAME": "com.ionicframework.mobileplayer132679"
         }
     },
     "dependent_plugins": {

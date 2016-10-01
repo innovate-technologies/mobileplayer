@@ -95,7 +95,8 @@
     "angular": true,
     "ionic": true,
     "NowPlaying": true,
-    "RemoteCommand": true
+    "RemoteCommand": true,
+    "SafariViewController": true,
   },
 
   "import/resolver": "node",
